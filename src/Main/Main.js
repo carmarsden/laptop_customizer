@@ -11,7 +11,8 @@ class Main extends Component {
                     features={this.props.features}
                     selected={this.props.selected}
                     handleUpdateFeature={this.props.handleUpdateFeature}/>
-                <Summary />
+                <Summary 
+                    selected={this.props.selected}/>
             </main>
         )
     }

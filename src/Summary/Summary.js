@@ -6,9 +6,10 @@ import TotalPrice from '../TotalPrice/TotalPrice';
 
 class Summary extends Component {
     render() {
-        const summary = Object.keys(this.props.selected).map(key => {
+        const summary = Object.keys(this.props.selected).map((key, index) => {
             return (
                 <FeatureSummary
+                    key={index}
                     featureKey={key}
                     selected={this.props.selected[key]}
                 />
